@@ -147,7 +147,7 @@ p {
 }
 
 .classification {
-    height: 600px;
+    height: 450px;
     background-color: blueviolet;
 
 }
@@ -159,9 +159,16 @@ p {
     justify-content: space-between;
 }
 
+.classification .container4 .box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .margin {
     width: 80%;
-    height: 90px;
+    height: 400px;
     position: relative;
     left: 50%;
     transform: translate(-50%);
@@ -172,9 +179,27 @@ p {
     position: relative;
 }
 
+.titulo-section {
+    width: 100%;
+    height: 90px;
+    
+}
+
 .container3 {
-    width: 80%;
-    height: 500px;
+    width: 100%;
+    height: 50%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container4 {
+    width: 100%;
+    height: 50%;
     position: relative;
     left: 50%;
     transform: translate(-50%);
@@ -188,6 +213,8 @@ h3 {
     font-family: 'Ubuntu', 'Roboto', 'Open Sans', sans-serif;
     font-size: 24px;
     color: white;
+    text-align: center;
+    margin-top: 40px;
 }
 
 .box {
