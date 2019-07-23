@@ -72,6 +72,8 @@ header{
     left: 50%;
     transform: translate(-50%);
     padding-top: 200px;
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -85,29 +87,31 @@ h1 {
 }
 
 .botao3 {
-    width: 170px;
+    width: 150px;
     border: none;
     border-radius: 20px;
-    padding: 8px;
+    padding: 12px;
     background-color: #89379a;
     color: white;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Ubuntu', 'Roboto', 'Open Sans', sans-serif;
     font-size: 18px;
     margin: 10px;
-        
+    text-decoration: none;
+    text-align: center;
 }
 
 .botao4 {
-    width: 170px;
+    width: 150px;
     border: none;
     border-radius: 20px;
-    padding: 8px;
+    padding: 12px;
     background-color: #89379a;
     color: white;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Ubuntu', 'Roboto', 'Open Sans', sans-serif;
     font-size: 18px;
     margin: 10px;
-        
+    text-decoration: none; 
+    text-align: center;   
 }
 
 .material-icons {
@@ -141,7 +145,6 @@ p {
 
 .container2 {
     width: 70%;
-    height: 600px;
     position: relative;
     left: 50%;
     transform: translate(-50%);
@@ -149,6 +152,7 @@ p {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    padding-top: 80px;
 }
 
 .info-phone {
@@ -391,6 +395,7 @@ form {
     top: 0;
     left: 0;
     display: none;
+    z-index: 6;
 }
 
 .modal-content {
@@ -411,11 +416,16 @@ form {
     display: none;
 }
 
+.navegation{
+    display: none;
+    }
+
 
 @media (max-width:480px){
 
 .container{
     width: 90%;
+    height: 67%;
     padding-top: 30px;
     flex-direction: column;
 }
@@ -445,12 +455,15 @@ form {
 
 h1 {
     font-size: 32px;
+    width: 100%;
+    width: auto;
 }
 
 .container2 {
     width: 90%;
     height: 1000px;
     flex-direction: column;
+    padding-top: 0;
 }
 
 h2 {
@@ -490,5 +503,25 @@ p {
     height: 400px;
 }
 
+.navegation{
+    background: #eeeeee;
+    width: 100%;
+    right: -100%;
+    position: fixed;
+    display: block;
+    z-index: 5;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: all 0.3s;
+}
+
+.navegation.active{
+    right: 0;
+}
+
+header {
+    position: fixed;
+    z-index: 5;
+}
 
 }
